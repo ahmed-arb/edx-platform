@@ -901,6 +901,10 @@ msgstr "Se\n  você não for redirecionado em 5 segundos, {start_anchor}clique a
 msgid "Your Platform Name Here"
 msgstr "Seu\n  Nome da plataforma aqui"
 
+#: cms/envs/common.py
+msgid "Open after 3 months"
+msgstr ""
+
 #: lms/envs/common.py
 msgid "Know your email address"
 msgstr "Saber\n  Seu endereço de email"
@@ -913,6 +917,10 @@ msgstr "Curso\n  Tipo"
 msgid "Kosovo"
 msgstr "Kosovo"
 
+#: cms/envs/bok_choy.py cms/envs/test.py
+msgid "𝓢𝓽𝓾𝓭𝓲𝓸"
+msgstr ""
+
 #: lms/envs/common.py
 msgid "No-Id-Professional"
 msgstr "Não ID Profissional"
@@ -920,6 +928,11 @@ msgstr "Não ID Profissional"
 #: lms/envs/common.py
 msgid "Know your name and username"
 msgstr "Saber\n  seu nome e nome de usuário"
+
+#: lms/envs/common.py
+#, python-brace-format
+msgid "Like {platform_name} on Facebook"
+msgstr ""
 
 #: lms/envs/common.py
 #, python-brace-format
@@ -1002,4 +1015,3 @@ msgstr ""
 #, optional
 msgid "CC-by-sa 4.0"
 msgstr ""
-
