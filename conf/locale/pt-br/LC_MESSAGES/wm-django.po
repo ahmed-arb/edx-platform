@@ -919,7 +919,7 @@ msgstr "Kosovo"
 
 #: cms/envs/bok_choy.py cms/envs/test.py
 msgid "𝓢𝓽𝓾𝓭𝓲𝓸"
-msgstr "𝓢𝓽𝓾𝓭𝓲𝓸"
+msgstr ""
 
 #: lms/envs/common.py
 msgid "No-Id-Professional"
