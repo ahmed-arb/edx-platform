@@ -903,7 +903,7 @@ msgstr "Seu\n  Nome da plataforma aqui"
 
 #: cms/envs/common.py
 msgid "Open after 3 months"
-msgstr "Abrir\n  após 3 meses"
+msgstr "Abrir  após 3 meses"
 
 #: lms/envs/common.py
 msgid "Know your email address"
@@ -932,7 +932,7 @@ msgstr "Saber\n  seu nome e nome de usuário"
 #: lms/envs/common.py
 #, python-brace-format
 msgid "Like {platform_name} on Facebook"
-msgstr "Como\n  {platform_name} no Facebook"
+msgstr "Como  {platform_name} no Facebook"
 
 #: lms/envs/common.py
 #, python-brace-format
