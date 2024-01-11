@@ -903,7 +903,7 @@ msgstr "Seu\n  Nome da plataforma aqui"
 
 #: cms/envs/common.py
 msgid "Open after 3 months"
-msgstr "Abrir\n  após 3 meses"
+msgstr "Abrir  após 3 meses"
 
 #: lms/envs/common.py
 msgid "Know your email address"
@@ -919,7 +919,7 @@ msgstr "Kosovo"
 
 #: cms/envs/bok_choy.py cms/envs/test.py
 msgid "𝓢𝓽𝓾𝓭𝓲𝓸"
-msgstr "𝓢𝓽𝓾𝓭𝓲𝓸"
+msgstr ""
 
 #: lms/envs/common.py
 msgid "No-Id-Professional"
@@ -927,7 +927,7 @@ msgstr "Não ID Profissional"
 
 #: lms/envs/common.py
 msgid "Know your name and username"
-msgstr "Saber\n  seu nome e nome de usuário"
+msgstr "Saber  seu nome e nome de usuário"
 
 #: lms/envs/common.py
 #, python-brace-format
