@@ -1,15 +1,51 @@
 name: CI - Quality Checks
 
+### TODO: Update this flow from edx-platfrom branch
 on:
   pull_request:
     types: [ opened, synchronize, reopened ]
-    branches:
-      - develop
-      - master
+  workflow_dispatch:
+
 jobs:
-  quality-checks:
-    name: Quality Checks
+  code-quality-checks:
+    name: Code Quality Checks
     runs-on: ubuntu-latest
+    
     steps:
       - name: Dummy Test
-        run: echo 'Add quality checks here'
+        run: echo 'Add code quality checks here'
+
+  local-translations-check:
+    name: Local Translation Checks
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Check If PR has translation changes
+        run: git diff --quiet HEAD develop -- conf || exit 0 
+      
+      - name: Set up python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Delete qqq folder if exists
+        id: delete-qqq-files
+        run: rm -r conf/locale/qqq
+        continue-on-error: true
+
+      - name: Check errors
+        run: |
+          export NO_PREREQ_INSTALL='true'
+          export LMS_CFG=$(pwd)/lms/devstack.yml
+          export STUDIO_CFG=$(pwd)/cms/devstack.yml
+
+          django-admin.py compilemessages
+          i18n_tool validate
+
+          grep exit 1
+          
+          unset LMS_CFG
+          unset STUDIO_CFG
